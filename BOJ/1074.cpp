@@ -4,20 +4,7 @@ using namespace std;
 int N, r, c, Size, result=0;
 int temp1, temp2;
 void Find_Z(int a,int b) {
-	if (Size == 2) {
-		if (a == 1 && b == 1) {
-		}
-		else if (a == 1 && b == 2) {
-			result += 1;
-		}
-		else if (a == 2 && b == 1) {
-			result += 2;
-		}
-		else if (a == 2 && b == 2) {
-			result += 3;
-		}
-	}
-	else {
+	if (Size >= 2) {
 		if (Size / 2 >= a && Size / 2 >= b) {
 			temp1 = a;
 			temp2 = b;
